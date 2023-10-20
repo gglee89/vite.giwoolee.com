@@ -1,1 +1,0 @@
-import{b as n,d as o,j as r}from"./index-ac232810.js";import{S as i}from"./Section-e2d2157c.js";const l=()=>{const s=n(o),e=Object.keys(s);return r.jsx("div",{children:e.length>0&&e.map(t=>r.jsx(i,{title:t,topics:s[t].topics,isDisabled:!0},t))})};export{l as default};

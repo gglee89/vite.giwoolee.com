@@ -1,1 +1,0 @@
-import{b as e,f as r,j as o}from"./index-ac232810.js";import{S as n}from"./Section-e2d2157c.js";const u=()=>{const i=e(r),t=Object.keys(i);return o.jsx("div",{className:"attribution-container",children:t&&t.length>0&&t.map(s=>o.jsx(n,{title:s,topics:i[s].topics,isDisabled:!0},s))})};export{u as default};
