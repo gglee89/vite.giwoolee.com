@@ -5,7 +5,7 @@
         // Modern browsers support all ES6 features, so ES6 is a good choice.
         "target": "ESNext",
         "lib": ["dom", "dom.iterable", "esnext"],
-        "allowJs": true,
+        "allowJs": false,
         "skipLibCheck": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
@@ -14,13 +14,14 @@
         // TypeScript will issue an error if you try to include a file by using a different casing from the casing of the file name on the disk.
         "forceConsistentCasingInFileNames": true,
         "noFallthroughCasesInSwitch": true,
-        "module": "commonjs",
+        "module": "ESNext",
         // You can read more about classic vs node module resolution in the TypeScript docs (https://www.typescriptlang.org/docs/handbook/module-resolution.html#module-resolution-strategies).
         "moduleResolution": "node",
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
         "jsx": "react-jsx",
+        "types": ["vite/client", "vite-plugin-svgr/client"],
         "baseUrl": "src",
         "sourceMap": true,
         "paths": {
@@ -35,6 +36,6 @@
             "data": ["src/data/*"]
         }
     },
-    "include": ["src", "server"],
+    "include": ["src"],
     "exclude": ["node_modules/", "build", "src/**/*.spec.ts"]
 }
